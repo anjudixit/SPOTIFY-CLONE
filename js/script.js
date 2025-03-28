@@ -1,3 +1,11 @@
+
+const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://your-production-api.com';
+
+fetch(`${apiUrl}/your-endpoint`)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
 console.log("Let's write javascript")
 let currentSong= new Audio();
 let songs;
