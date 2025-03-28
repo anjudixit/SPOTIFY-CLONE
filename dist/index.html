@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="/assets/index-C65H2JGO.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DSuLrDr1.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img class="invert" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='currentColor'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3cline%20x1='18'%20y1='6'%20x2='6'%20y2='18'%3e%3c/line%3e%3cline%20x1='6'%20y1='6'%20x2='18'%20y2='18'%3e%3c/line%3e%3c/svg%3e" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width= "40" class="invert" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20role='img'%20viewBox='0%200%2024%2024'%20class='e-9541-logo%20e-9541-baseline'%20aria-label='Spotify'%20aria-hidden='false'%20height='32'%20data-encore-id='logoSpotify'%20style='--encore-logo-fill-color:%20var(--decorative-base);'%3e%3ctitle%3eSpotify%3c/title%3e%3cpath%20d='M13.427.01C6.805-.253%201.224%204.902.961%2011.524.698%2018.147%205.853%2023.728%2012.476%2023.99c6.622.263%2012.203-4.892%2012.466-11.514S20.049.272%2013.427.01m5.066%2017.579a.717.717%200%200%201-.977.268%2014.4%2014.4%200%200%200-5.138-1.747%2014.4%2014.4%200%200%200-5.42.263.717.717%200%200%201-.338-1.392c1.95-.474%203.955-.571%205.958-.29%202.003.282%203.903.928%205.647%201.92a.717.717%200%200%201%20.268.978m1.577-3.15a.93.93%200%200%201-1.262.376%2017.7%2017.7%200%200%200-5.972-1.96%2017.7%2017.7%200%200%200-6.281.238.93.93%200%200%201-1.11-.71.93.93%200%200%201%20.71-1.11%2019.5%2019.5%200%200%201%206.94-.262%2019.5%2019.5%200%200%201%206.599%202.165c.452.245.62.81.376%201.263m1.748-3.551a1.147%201.147%200%200%201-1.546.488%2021.4%2021.4%200%200%200-6.918-2.208%2021.4%2021.4%200%200%200-7.259.215%201.146%201.146%200%200%201-.456-2.246%2023.7%2023.7%200%200%201%208.034-.24%2023.7%2023.7%200%200%201%207.657%202.445c.561.292.78.984.488%201.546m13.612-.036-.832-.247c-1.67-.495-2.14-.681-2.14-1.353%200-.637.708-1.327%202.264-1.327%201.539%200%202.839.752%203.51%201.31.116.096.24.052.24-.098V6.935c0-.097-.027-.15-.098-.203-.83-.62-2.272-1.07-3.723-1.07-2.953%200-4.722%201.68-4.722%203.59%200%202.157%201.371%202.91%203.626%203.546l.973.274c1.689.478%201.998.902%201.998%201.556%200%201.097-.831%201.433-2.07%201.433-1.556%200-3.457-.911-4.35-2.025-.08-.098-.177-.053-.177.062v2.423c0%20.097.01.141.08.22.743.814%202.52%201.53%204.59%201.53%202.546%200%204.456-1.485%204.456-3.784%200-1.787-1.052-2.865-3.625-3.635m10.107-1.76c-1.68%200-2.653%201.026-3.219%202.052V9.376c0-.08-.044-.124-.124-.124h-2.22c-.079%200-.123.044-.123.124V20.72c0%20.08.044.124.124.124h2.22c.079%200%20.123-.044.123-.124v-4.536c.566%201.025%201.521%202.034%203.237%202.034%202.264%200%203.89-1.955%203.89-4.581s-1.644-4.545-3.908-4.545m-.654%206.986c-1.185%200-2.211-1.167-2.618-2.458.407-1.362%201.344-2.405%202.618-2.405%201.211%200%202.051.92%202.051%202.423s-.84%202.44-2.051%202.44m40.633-6.826h-2.264c-.08%200-.115.017-.15.097l-2.282%205.483-2.29-5.483c-.035-.08-.07-.097-.15-.097h-3.661v-.584c0-.955.645-1.397%201.476-1.397.496%200%201.035.256%201.415.486.089.053.15-.008.115-.088l-.796-1.901a.26.26%200%200%200-.124-.133c-.389-.203-1.025-.38-1.644-.38-1.875%200-2.954%201.432-2.954%203.254v.743h-1.503c-.08%200-.124.044-.124.124v1.768c0%20.08.044.124.124.124h1.503v6.668c0%20.08.044.123.124.123h2.264c.08%200%20.124-.044.124-.123v-6.668h1.936l2.812%206.11-1.512%203.325c-.044.098.009.142.097.142h2.414c.08%200%20.116-.018.15-.097l4.997-11.355c.035-.08-.009-.141-.097-.141M54.964%209.04c-2.865%200-4.837%202.025-4.837%204.616%200%202.573%201.971%204.616%204.837%204.616%202.856%200%204.846-2.043%204.846-4.616%200-2.591-1.99-4.616-4.846-4.616m.008%207.065c-1.37%200-2.343-1.043-2.343-2.45%200-1.405.973-2.449%202.343-2.449%201.362%200%202.335%201.043%202.335%202.45%200%201.406-.973%202.45-2.335%202.45m33.541-6.334a1.24%201.24%200%200%200-.483-.471%201.4%201.4%200%200%200-.693-.17q-.384%200-.693.17a1.24%201.24%200%200%200-.484.471q-.174.302-.174.681%200%20.375.174.677.175.3.484.471t.693.17.693-.17.483-.471.175-.676q0-.38-.175-.682m-.211%201.247a1%201%200%200%201-.394.39%201.15%201.15%200%200%201-.571.14%201.16%201.16%200%200%201-.576-.14%201%201%200%200%201-.391-.39%201.14%201.14%200%200%201-.14-.566q0-.316.14-.562t.391-.388.576-.14q.32%200%20.57.14.253.141.395.39t.142.565q0%20.312-.142.56m-19.835-5.78c-.85%200-1.468.6-1.468%201.396s.619%201.397%201.468%201.397c.866%200%201.485-.6%201.485-1.397%200-.796-.619-1.397-1.485-1.397m19.329%205.19a.31.31%200%200%200%20.134-.262q0-.168-.132-.266-.132-.099-.381-.099h-.588v1.229h.284v-.489h.154l.374.489h.35l-.41-.518a.5.5%200%200%200%20.215-.084m-.424-.109h-.26v-.3h.27q.12%200%20.184.036a.12.12%200%200%201%20.065.116.12.12%200%200%201-.067.111.4.4%200%200%201-.192.037M69.607%209.252h-2.263c-.08%200-.124.044-.124.124v8.56c0%20.08.044.123.124.123h2.263c.08%200%20.124-.044.124-.123v-8.56c0-.08-.044-.124-.124-.124m-3.333%206.605a2.1%202.1%200%200%201-1.053.257c-.725%200-1.185-.425-1.185-1.362v-3.484h2.211c.08%200%20.124-.044.124-.124V9.376c0-.08-.044-.124-.124-.124h-2.21V6.944c0-.097-.063-.15-.15-.08l-3.954%203.113c-.053.044-.07.088-.07.16v1.007c0%20.08.044.124.123.124h1.539v3.855c0%202.087%201.203%203.06%202.918%203.06.743%200%201.46-.194%201.884-.442.062-.035.07-.07.07-.133v-1.68c0-.088-.044-.115-.123-.07'%20transform='translate(-0.95,0)'%3e%3c/path%3e%3c/svg%3e" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20data-encore-id='icon'%20role='img'%20aria-hidden='true'%20class='Svg-sc-ytk21e-0%20bHdpig%20e-9541-icon%20M9l40ptEBXPm03dU3X1k'%20data-testid='search-icon'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M10.533%201.27893C5.35215%201.27893%201.12598%205.41887%201.12598%2010.5579C1.12598%2015.697%205.35215%2019.8369%2010.533%2019.8369C12.767%2019.8369%2014.8235%2019.0671%2016.4402%2017.7794L20.7929%2022.132C21.1834%2022.5226%2021.8166%2022.5226%2022.2071%2022.132C22.5976%2021.7415%2022.5976%2021.1083%2022.2071%2020.7178L17.8634%2016.3741C19.1616%2014.7849%2019.94%2012.7634%2019.94%2010.5579C19.94%205.41887%2015.7138%201.27893%2010.533%201.27893ZM3.12598%2010.5579C3.12598%206.55226%206.42768%203.27893%2010.533%203.27893C14.6383%203.27893%2017.94%206.55226%2017.94%2010.5579C17.94%2014.5636%2014.6383%2017.8369%2010.533%2017.8369C6.42768%2017.8369%203.12598%2014.5636%203.12598%2010.5579Z'%3e%3c/path%3e%3c/svg%3e" alt="search">Search</li>
+                    <li><img class="invert" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20data-encore-id='icon'%20role='img'%20aria-hidden='true'%20class='Svg-sc-ytk21e-0%20bneLcE%20e-9541-icon'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M13.5%201.515a3%203%200%200%200-3%200L3%205.845a2%202%200%200%200-1%201.732V21a1%201%200%200%200%201%201h6a1%201%200%200%200%201-1v-6h4v6a1%201%200%200%200%201%201h6a1%201%200%200%200%201-1V7.577a2%202%200%200%200-1-1.732l-7.5-4.33z'%3e%3c/path%3e%3c/svg%3e" alt="home">Home</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading ">
+                    <img class="invert" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20data-encore-id='icon'%20role='img'%20aria-hidden='true'%20class='Svg-sc-ytk21e-0%20bneLcE%20e-9541-icon'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M3%2022a1%201%200%200%201-1-1V3a1%201%200%200%201%202%200v18a1%201%200%200%201-1%201zM15.5%202.134A1%201%200%200%200%2014%203v18a1%201%200%200%200%201%201h6a1%201%200%200%200%201-1V6.464a1%201%200%200%200-.5-.866l-6-3.464zM9%202a1%201%200%200%200-1%201v18a1%201%200%201%200%202%200V3a1%201%200%200%200-1-1z'%3e%3c/path%3e%3c/svg%3e">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+        
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div class="footerText"><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &Privacy Center</span></a></div>
+                    <div class="footerText"><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div class="footerText"><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div class="footerText"><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div class="footerText"><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div class="footerText"><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header flex">
+                <div class="nav">
+                    <img width="30" class="invert hamburger" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%20color='%23000000'%20fill='none'%3e%3cpath%20d='M4%205L20%205'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3cpath%20d='M4%2012L20%2012'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3cpath%20d='M4%2019L20%2019'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3c/svg%3e" alt="">
+                    <i class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+                </div>
+                <div class="buttons flex">
+                    <button id="sign">Sign up</button>&nbsp;&nbsp;&nbsp;
+                    <button class="flex" id="login">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <!-- <div class="card" data-folder="${folder}"> -->
+                        <!-- <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="23" fill="lightgreen" />
+                                <path
+                                    d="M17.05 13.606L30.54 21.394a.7.7 0 0 1 0 1.212L17.05 30.394A.7.7 0 0 1 16 29.788V14.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e025e16168f7e8ff4fb8aace6cf" alt="">
+                        <h2>Aaj Ki Raat</h2>
+                        <p>Amitabh Bhatacharya,Sachin Jigar,Divya Kumar</p>
+                    </div>
+                    <div class="card" data-folder="${folder}">
+                        <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="23" fill="lightgreen" />
+                                <path
+                                    d="M17.05 13.606L30.54 21.394a.7.7 0 0 1 0 1.212L17.05 30.394A.7.7 0 0 1 16 29.788V14.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0252e3a807b72281cb40c08092" alt="">
+                        <h2>Akhiyaan Gulaab</h2>
+                        <p>Mitraz</p>
+                    </div>
+                    <div class="card" data-folder="${folder}">
+                        <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="23" fill="lightgreen" />
+                                <path
+                                    d="M17.05 13.606L30.54 21.394a.7.7 0 0 1 0 1.212L17.05 30.394A.7.7 0 0 1 16 29.788V14.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0244a38a16ca8778e748a4ac8b" alt="">
+                        <h2>Mere Mehboob</h2>
+                        <p>Sachin Jigar,Shilpa Rao,Sachet Tandon,Priya Saraiya</p>
+                    </div>
+                    <div class="card" data-folder="${folder}">
+                        <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="23" fill="lightgreen" />
+                                <path
+                                    d="M17.05 13.606L30.54 21.394a.7.7 0 0 1 0 1.212L17.05 30.394A.7.7 0 0 1 16 29.788V14.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
+                        <h2>Pehle Bhi Mein</h2>
+                        <p>Manan Bhardwaj,Vishal Mishra, Jaani</p>
+                    </div>
+                    <div class="card" data-folder="${folder}">
+                        <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="23" fill="lightgreen" />
+                                <path
+                                    d="M17.05 13.606L30.54 21.394a.7.7 0 0 1 0 1.212L17.05 30.394A.7.7 0 0 1 16 29.788V14.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02773c5f60bcb309ef8802e4ef" alt="">
+                        <h2>Raanjhan(From "Do Patti")</h2>
+                        <p>Sachet-Parampara, Parampara Tandon, Kausar Munir</p>
+                    </div>
+                    <div class="card" data-folder="${folder}">
+                        <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="23" fill="lightgreen" />
+                                <path
+                                    d="M17.05 13.606L30.54 21.394a.7.7 0 0 1 0 1.212L17.05 30.394A.7.7 0 0 1 16 29.788V14.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02f000fdbe92e9a1058034fd33" alt="">
+                        <h2>Sanam Teri Kasam</h2>
+                        <p>Himesh Reshammiya, Sameer Anjaan</p>
+                    </div>
+                    <div class="card" data-folder="${folder}">
+                        <div class="play">
+                            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="23" r="23" fill="lightgreen" />
+                                <path
+                                    d="M17.05 13.606L30.54 21.394a.7.7 0 0 1 0 1.212L17.05 30.394A.7.7 0 0 1 16 29.788V14.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+                        <h2>Aashiqui 2</h2>
+                        <p>Mithoon, Ankit Tiwari, Jeet Gangulli</p>
+                    </div> -->
+                </div>
+                <div class="playBar">
+                    <div class="seekbar">
+                        <div class="circle">
+                            
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songInfo"></div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%20color='%23000000'%20fill='none'%3e%3cpath%20d='M8.06492%2012.6258C8.31931%2013.8374%209.67295%2014.7077%2012.3802%2016.4481C15.3247%2018.3411%2016.797%2019.2876%2017.9895%2018.9229C18.3934%2018.7994%2018.7654%2018.5823%2019.0777%2018.2876C20%2017.4178%2020%2015.6118%2020%2012C20%208.38816%2020%206.58224%2019.0777%205.71235C18.7654%205.41773%2018.3934%205.20057%2017.9895%205.07707C16.797%204.71243%2015.3247%205.6589%2012.3802%207.55186C9.67295%209.29233%208.31931%2010.1626%208.06492%2011.3742C7.97836%2011.7865%207.97836%2012.2135%208.06492%2012.6258Z'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linejoin='round'%20/%3e%3cpath%20d='M4%204L4%2020'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20/%3e%3c/svg%3e" alt="">
+                            <img width="35" id="play" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%20color='%23000000'%20fill='none'%3e%3cpath%20d='M18.8906%2012.846C18.5371%2014.189%2016.8667%2015.138%2013.5257%2017.0361C10.296%2018.8709%208.6812%2019.7884%207.37983%2019.4196C6.8418%2019.2671%206.35159%2018.9776%205.95624%2018.5787C5%2017.6139%205%2015.7426%205%2012C5%208.2574%205%206.3861%205.95624%205.42132C6.35159%205.02245%206.8418%204.73288%207.37983%204.58042C8.6812%204.21165%2010.296%205.12907%2013.5257%206.96393C16.8667%208.86197%2018.5371%209.811%2018.8906%2011.154C19.0365%2011.7084%2019.0365%2012.2916%2018.8906%2012.846Z'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linejoin='round'%20/%3e%3c/svg%3e" alt="">
+                            <img width="35" id="next" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%20color='%23000000'%20fill='none'%3e%3cpath%20d='M15.9351%2012.6258C15.6807%2013.8374%2014.327%2014.7077%2011.6198%2016.4481C8.67528%2018.3411%207.20303%2019.2876%206.01052%2018.9229C5.60662%2018.7994%205.23463%2018.5823%204.92227%2018.2876C4%2017.4178%204%2015.6118%204%2012C4%208.38816%204%206.58224%204.92227%205.71235C5.23463%205.41773%205.60662%205.20057%206.01052%205.07707C7.20304%204.71243%208.67528%205.6589%2011.6198%207.55186C14.327%209.29233%2015.6807%2010.1626%2015.9351%2011.3742C16.0216%2011.7865%2016.0216%2012.2135%2015.9351%2012.6258Z'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linejoin='round'%20/%3e%3cpath%20d='M20%205V19'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20/%3e%3c/svg%3e" alt="">
+                        </div>
+                        <div class="timeVol">
+                            <div class="songTime">
+
+                            </div>
+                            <div class="volume">
+                                <img width="25" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%20color='%23000000'%20fill='none'%3e%3cpath%20d='M14%2014.8135V9.18646C14%206.04126%2014%204.46866%2013.0747%204.0773C12.1494%203.68593%2011.0603%204.79793%208.88232%207.02192C7.75439%208.17365%207.11085%208.42869%205.50604%208.42869C4.10257%208.42869%203.40084%208.42869%202.89675%208.77262C1.85035%209.48655%202.00852%2010.882%202.00852%2012C2.00852%2013.118%201.85035%2014.5134%202.89675%2015.2274C3.40084%2015.5713%204.10257%2015.5713%205.50604%2015.5713C7.11085%2015.5713%207.75439%2015.8264%208.88232%2016.9781C11.0603%2019.2021%2012.1494%2020.3141%2013.0747%2019.9227C14%2019.5313%2014%2017.9587%2014%2014.8135Z'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3cpath%20d='M17%209C17.6254%209.81968%2018%2010.8634%2018%2012C18%2013.1366%2017.6254%2014.1803%2017%2015'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3cpath%20d='M20%207C21.2508%208.36613%2022%2010.1057%2022%2012C22%2013.8943%2021.2508%2015.6339%2020%2017'%20stroke='currentColor'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%20/%3e%3c/svg%3e" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
