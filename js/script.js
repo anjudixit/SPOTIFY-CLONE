@@ -30,8 +30,9 @@ function formatTime(seconds) {
 async function getSongs(folder) {
     curFolder= folder;
     console.log(folder);
-    let a = await fetch(`http://127.0.0.1:5500/${folder}`);
-    console.log("Fetching from:", `http://127.0.0.1:5500/${folder}`);
+    const baseUrl = window.location.origin;
+    let a = await fetch(`${baseUrl}/${folder}`);
+    console.log("Fetching from:", `${baseUrl}/${folder}`);
     
     let response = await a.text();
     let div = document.createElement("div");
@@ -80,6 +81,7 @@ async function getSongs(folder) {
 
 const playMusic = (track, pause = false) => {
     const baseUrl = window.location.origin;
+    console.log("Base URL:", baseUrl); // Debugging
     currentSong.src = `${baseUrl}/${curFolder}/` + (track.includes("songs/") ? track.replace("songs/", "") : track);
     console.log("Attempting to play:", currentSong.src); // Debugging
 
@@ -97,7 +99,8 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-    let a = await fetch(`http://127.0.0.1:5500/songs/`);
+    const baseUrl = window.location.origin;
+    let a = await fetch(`${baseUrl}/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
