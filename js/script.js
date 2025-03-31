@@ -1,10 +1,12 @@
 
-const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://your-production-api.com';
+// const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://your-production-api.com';
 
-fetch(`${apiUrl}/your-endpoint`)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
+// fetch(`${apiUrl}/your-endpoint`)
+//   .then(response => response.json())
+//   .then(data => console.log(data))
+//   .catch(error => console.error('Error:', error));
+
+  
 
 console.log("Let's write javascript")
 let currentSong= new Audio();
@@ -27,8 +29,10 @@ function formatTime(seconds) {
 
 async function getSongs(folder) {
     curFolder= folder;
+    console.log(folder);
     let a = await fetch(`http://127.0.0.1:5500/${folder}`);
     console.log("Fetching from:", `http://127.0.0.1:5500/${folder}`);
+    
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -75,13 +79,17 @@ async function getSongs(folder) {
 
 
 const playMusic = (track, pause = false) => {
-    currentSong.src= `/${curFolder}/` + (track.replace("songs/", ""));
+    const baseUrl = window.location.origin;
+    currentSong.src = `${baseUrl}/${curFolder}/` + (track.includes("songs/") ? track.replace("songs/", "") : track);
     console.log("Attempting to play:", currentSong.src); // Debugging
 
     // Check if the audio element is ready to play
-    if(!pause){
-        currentSong.play();
-        play.src= "pause.svg";
+    if (!pause && currentSong.paused) {
+        currentSong.play();  // Play the song if it is paused
+        play.src = "pause.svg";  // Change button to pause icon
+    } else if (pause && !currentSong.paused) {
+        currentSong.pause();  // Pause the song if it is playing
+        play.src = "play.svg";  // Change button to play icon
     }
 
     document.querySelector(".songInfo").innerHTML = decodeURIComponent(track.split("/").pop());
